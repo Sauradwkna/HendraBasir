@@ -1,0 +1,496 @@
+:root {
+  --maroon: #6c0102;
+  --red: #d50102;
+  --navy: #013766;
+  --black: #0f1417;
+  --yellow: #f7c815;
+  --white: #e1e1e1;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+
+html,
+body {
+  font-family: "Oswald";
+  font-size: 20px;
+  line-height: 1.5;
+  color: var(--white);
+  scroll-behavior: smooth;
+}
+
+/* Navbar */
+.navbar {
+  background: linear-gradient(to right, #d50102, #013766);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.5rem 7%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 9999;
+  box-shadow: -3px 2px 2px rgba(225, 225, 225, 0.5);
+}
+
+.navbar .navbar-extra a {
+  color: var(--white);
+  padding: 1rem 0;
+  display: none;
+}
+
+.navbar .navbar-extra a:hover {
+  color: var(--red);
+}
+
+.navbar .navbar-logo {
+  color: var(--white);
+  font-style: italic;
+}
+
+.navbar .navbar-nav a {
+  color: var(--white);
+  font-family: "Bebas Neue";
+  font-size: 1.2rem;
+  padding: 0 2rem;
+  display: inline-block;
+}
+
+.navbar .navbar-nav a:hover {
+  color: var(--red);
+  scale: 1.1;
+}
+
+.navbar .navbar-button button {
+  color: var(--white);
+  background-color: var(--red);
+  font-family: "Bebas Neue";
+  font-size: 1rem;
+  padding: 0.1rem 1rem;
+  border: 0.1rem solid var(--maroon);
+  border-radius: 0.3rem;
+  outline: none;
+  cursor: pointer;
+}
+
+.navbar .navbar-button button:hover {
+  scale: 1.05;
+  background-color: var(--white);
+  color: var(--red);
+}
+
+/* Beranda */
+.beranda {
+  background-image: url("../img/hendra_basir.jpg"); /* Ganti dengan path gambar yang sesuai */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  text-align: center;
+  color: #fff;
+  position: relative;
+  padding-top: 450px;
+  padding-bottom: 25px;
+  display: flex; /* Tambahkan display flex */
+  justify-content: center; /* Tambahkan justify-content center */
+  align-items: center; /* Tambahkan align-items center */
+}
+
+.col-content {
+  background-color: rgba(213, 1, 1, 0.5);
+  width: 95%;
+  text-align: center;
+  margin: 0 auto; /* Ini akan membuatnya menjadi rata tengah secara horizontal */
+  padding: 2rem;
+}
+
+.col-content h1 {
+  font-family: "Bebas Neue";
+  font-weight: 100;
+}
+
+.col-content p {
+  font-family: "Oswald";
+}
+
+/* Profil */
+.profil {
+  padding: 3rem 7rem 7%;
+  color: var(--maroon);
+}
+
+/* .profil h2 {
+text-align: center;
+font-size: 2rem;
+margin-bottom: 1rem;
+font-weight: bold;
+padding-bottom: 2rem;
+}
+
+.profil .content {
+flex: 1 1 60rem;
+padding: 2rem 0rem;
+} */
+
+.profil .content h1 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  color: var(--maroon);
+  font-family: "Bebas Neue";
+}
+
+.profil .content p {
+  font-size: 24px;
+  font-weight: 100;
+  line-height: 1.5;
+  color: var(--maroon);
+  text-align: justify;
+}
+
+/* Artikel */
+.artikel {
+  padding: 3rem 7rem 7%;
+}
+.artikel h1 {
+  text-align: center;
+  font-size: 2rem;
+  font-weight: bold;
+  color: var(--maroon);
+  font-family: "Bebas Neue";
+}
+
+.artikel .slider-container {
+  /*container*/
+  position: relative;
+  max-width: 3000px;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+.artikel .slider-container:hover .slider {
+  /* Menghentikan animasi saat pointer hover */
+  animation-play-state: paused;
+}
+
+.artikel .slider-container .slider {
+  /*article-slide*/
+  display: flex;
+  width: 2500px;
+  transition: transform 0.5s ease-in-out;
+  margin: 50px 0;
+}
+
+.artikel .slider-container .slider .card {
+  width: 480px;
+  margin-right: 35px;
+  border-radius: 3px;
+  text-align: center;
+  border: 1px solid #ffffff;
+  transition: 0.5s;
+}
+
+.artikel .slider-container .slider .card:hover {
+  border: 1px solid rgba(15, 20, 23, 0.5);
+}
+
+.artikel .slider-container .slider .card img {
+  width: 480px;
+  height: 200px;
+  margin: -1px;
+  object-fit: cover;
+}
+
+.artikel .slider-container .slider .card h3 {
+  font-weight: bold;
+  margin: 0;
+  padding: 5px 0px 10px 0px;
+  color: var(--black);
+  font-family: "Bebas Neue";
+}
+
+.artikel .slider-container .slider .card p {
+  text-align: center;
+  color: var(--navy);
+  font-size: 16px;
+  padding: 0 10px;
+  padding-bottom: 2rem;
+}
+
+.artikel .slider-container .slider .card a {
+  font-size: 20px;
+  text-align: center;
+  color: var(--maroon);
+}
+
+.controls {
+  position: relative;
+  display: flex;
+  justify-content: center; /* Mengatur tombol ke tengah secara horizontal */
+  align-items: center; /* Mengatur tombol ke tengah secara vertikal */
+  width: 90%; /* Mengisi lebar 100% dari parent */
+  bottom: 375px; /* Atur jarak dari bagian bawah */
+  justify-content: space-between;
+  margin: 0 auto;
+}
+
+.controls button {
+  padding: 6px 6px 5px 6px;
+  margin: 5px;
+  border: none;
+  color: white;
+  background-color: var(--black);
+  cursor: pointer;
+  width: auto;
+}
+
+.controls button:focus {
+  outline: none;
+}
+
+/* Atlet */
+.container {
+  margin: 0 auto;
+  text-align: center;
+  padding: 0 3rem 7%;
+}
+
+.container .sub-container {
+  max-width: 90%;
+  background: linear-gradient(to bottom, #6c0102, #013766);
+  margin: 0 auto;
+  padding: 3rem 3rem 7%;
+  box-shadow: 0 0 8px 2px rgba(0, 0, 0, 0.2);
+}
+
+.container h1 {
+  font-family: "Bebas Neue";
+  padding-bottom: 2rem;
+}
+
+.container .product-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 15px;
+}
+
+.container .product-grid .card {
+  text-align: center;
+  margin: 15px;
+  box-sizing: border-box;
+  float: left;
+  text-align: center;
+  cursor: pointer;
+  padding: 20px;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+  transition: 0.4s;
+  background-color: white;
+  color: #013766;
+  border-radius: 10px;
+}
+
+.container .product-grid .card:hover {
+  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+  transform: translate(0px, -8px);
+}
+
+.container .product-grid .card img {
+  width: 190px;
+  height: 190px;
+  text-align: center;
+  margin: 0px 0px 5px 0px;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+.container .product-grid .card h5 {
+  text-align: center;
+  font-weight: bold;
+  margin: 0;
+  padding: 10px 0px 5px 0px;
+  /* border-top: 1px solid rgba(0, 0, 0, 0.1); */
+}
+
+.container .product-grid .card p {
+  font-size: 0.8rem;
+  font-weight: bold;
+  text-align: center;
+  margin: 0;
+  padding: 10px 5px;
+}
+
+.container .product-grid .card button {
+  text-align: center;
+  font-size: 18px;
+  font-weight: bold;
+  color: white;
+  background-color: var(--hovertext);
+  width: 100%;
+  padding: 15px;
+  border: 0;
+  outline: 0;
+  cursor: pointer;
+  margin-top: 5px;
+  border-bottom-right-radius: 10px;
+  border-bottom-left-radius: 10px;
+}
+
+.container .more {
+  padding-top: 3rem;
+}
+
+.container .more a {
+  color: var(--white);
+}
+
+/* Footer */
+.footer {
+  background-color: var(--black);
+  padding: 3rem 5rem 3rem 7%;
+}
+
+.footer .content {
+  display: flex;
+  font-family: "Bebas Neue";
+}
+
+.footer .content .kontak {
+  flex: 1 1 28rem;
+}
+
+.footer .content .info {
+  flex: 1 1 50rem;
+}
+
+.footer .content .info a {
+  color: var(--white);
+  padding: 0.6rem 0rem;
+  justify-content: right;
+  display: flex;
+}
+
+/* TABLET */
+@media (max-width: 768px) {
+  html {
+    font-size: 65%;
+  }
+
+  .navbar {
+    background: linear-gradient(to top right, #d50102, #013766);
+  }
+
+  .navbar .navbar-extra a {
+    display: inline-block;
+  }
+
+  .navbar .navbar-nav {
+    position: absolute;
+    background-color: rgba(213, 1, 1, 0.8);
+    top: 100%;
+    left: -100%;
+    width: 25rem;
+    height: 100vh;
+    padding-top: 7rem;
+    box-shadow: -3px 2px 2px rgba(225, 225, 225, 0.5);
+    transition: 0.3s;
+  }
+
+  .navbar .navbar-nav.active {
+    left: 0;
+  }
+
+  .navbar .navbar-nav a {
+    display: block;
+    padding: 1.5rem 1.5rem 1.5rem 4rem;
+    font-size: 2.5rem;
+  }
+
+  .navbar .navbar-nav a:hover {
+    color: white;
+    scale: 0.95;
+  }
+
+  .navbar .navbar-button button {
+    position: absolute;
+    top: 110%;
+    left: -100%;
+    display: block;
+    margin: 2.5rem 4rem;
+    padding: 0.1rem 2rem;
+    font-size: 2rem;
+    transition: 0.3s;
+    background-color: var(--white);
+    color: var(--red);
+  }
+
+  .navbar .navbar-button button.active {
+    left: 0;
+  }
+
+  .profil .content h1 {
+    font-size: 2rem;
+  }
+
+  .profil .content p {
+    font-size: 1.5rem;
+  }
+
+  .container {
+    padding: 0;
+  }
+
+  .container .sub-container {
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 7rem 3rem 7rem 7%;
+  }
+
+  .container .product-grid {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    margin: 50px 0;
+  }
+
+  .container .product-grid .card {
+    padding-top: 25px;
+  }
+
+  .container .product-grid .card p {
+    font-size: 1.3rem;
+    font-weight: bold;
+    text-align: center;
+    margin: 0;
+    padding: 5px 0px 0px;
+  }
+
+  .container .product-grid .card img {
+    width: 190px;
+    height: 190px;
+    margin: 0px 10px 10px 10px;
+  }
+
+  .footer .content .kontak {
+    flex: 1 1 28rem;
+    font-size: 1.6rem;
+  }
+
+  .footer .content .info a {
+    color: var(--white);
+    padding: 1.3rem 0rem;
+    justify-content: right;
+    display: flex;
+  }
+}
+
+/* Mobile */
+@media (max-width: 450px) {
+  html {
+    font-size: 40%;
+  }
+}
