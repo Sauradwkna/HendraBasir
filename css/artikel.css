@@ -67,3 +67,112 @@ body {
   background-color: var(--white);
   color: var(--maroon);
 }
+
+.navigation {
+  padding-top: 3.5rem;
+}
+
+.navigation p {
+  background-color: var(--white);
+  color: rgba(15, 20, 23, 0.5);
+  font-size: 14px;
+  text-align: center;
+  padding: 0.3rem;
+}
+
+.artikel {
+  padding: 1rem 2%;
+  display: flex;
+  justify-content: center;
+}
+
+.artikel .sub-artikel {
+  padding: 1rem 2rem;
+  padding-bottom: 5rem;
+}
+
+.artikel .sub-artikel img {
+  width: 850px;
+  height: auto;
+}
+
+.artikel .sub-artikel h4 {
+  font-weight: 900;
+  padding: 20px 0;
+}
+
+.artikel .sub-artikel .calendar {
+  display: flex;
+  padding: 0;
+}
+
+.artikel .sub-artikel .calendar p {
+  font-size: 14px;
+  text-align: center;
+  padding: 5px 10px;
+}
+
+.artikel .sub-artikel p {
+  font-size: 1rem;
+  text-align: justify;
+}
+
+.artikel .list-artikel .container {
+  padding: 1.5rem 1rem;
+}
+
+.artikel .list-artikel .container .card {
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+}
+
+.artikel .list-artikel .container .card:hover {
+  scale: 1.05;
+  transition: 0.4s;
+}
+
+.artikel .list-artikel .container .card a {
+  text-decoration: none;
+  cursor: pointer;
+  color: var(--black);
+}
+
+.artikel .list-artikel .container .card a:hover {
+  color: var(--navy);
+}
+
+/* Footer */
+.footer {
+  background-color: var(--black);
+  padding: 4rem 7% 1rem;
+}
+
+.footer .content {
+  display: flex;
+  font-family: "Francois One";
+}
+
+.footer .content .kontak {
+  flex: 1 1 28rem;
+  color: var(--white);
+}
+
+.footer .content .kontak p {
+  font-size: 0.8rem;
+}
+
+.footer .content .info {
+  flex: 1 1 50rem;
+}
+
+.footer .content .info a {
+  font-size: 1rem;
+  color: var(--white);
+  padding: 0.6rem 0rem;
+  justify-content: right;
+  display: flex;
+  text-decoration: none;
+}
+
+.footer .content .info a:hover {
+  color: var(--red);
+}
