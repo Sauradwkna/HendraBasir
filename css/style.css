@@ -52,6 +52,10 @@ body {
   color: var(--red);
 }
 
+.navbar .collapse .nav-link.active {
+  font-weight: 900;
+}
+
 .navbar .collapse form button {
   color: var(--white);
   background-color: var(--maroon);
