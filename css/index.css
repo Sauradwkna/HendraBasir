@@ -448,6 +448,30 @@ padding: 2rem 0rem;
     padding: 7rem 3rem 7rem 7%;
   }
 
+  .artikel .slider-container .slider .card {
+    width: 515px;
+    margin-right: 0;
+  }
+
+  .artikel .slider-container .slider .card img {
+    width: 300px;
+    height: 175px;
+    margin: 0;
+  }
+
+  .artikel .slider-container .slider .card h3 {
+    font-size: 1.5rem;
+    padding: 10px 0;
+  }
+
+  .artikel .slider-container .slider .card p {
+    font-size: 1.2rem;
+  }
+
+  .artikel .slider-container .slider .card a {
+    font-size: 1.3rem;
+  }
+
   .container .product-grid {
     display: flex;
     flex-wrap: wrap;
