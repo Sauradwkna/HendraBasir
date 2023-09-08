@@ -87,12 +87,12 @@ body {
 }
 
 .artikel .sub-artikel {
-  padding: 1rem 2rem;
+  padding: 1.5rem;
   padding-bottom: 5rem;
 }
 
 .artikel .sub-artikel img {
-  width: 850px;
+  width: 100%;
   height: auto;
 }
 
@@ -118,7 +118,7 @@ body {
 }
 
 .artikel .list-artikel .container {
-  padding: 1.5rem 1rem;
+  padding: 1.5rem;
 }
 
 .artikel .list-artikel .container .card {
@@ -175,4 +175,18 @@ body {
 
 .footer .content .info a:hover {
   color: var(--red);
+}
+
+@media (max-width: 768px) {
+  html {
+    font-size: 75%;
+  }
+
+  .navigation {
+    padding-top: 4.5rem;
+  }
+
+  .artikel {
+    display: flex;
+  }
 }
