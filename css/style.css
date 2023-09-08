@@ -258,4 +258,21 @@ body {
   html {
     font-size: 75%;
   }
+
+  .cards .card-grid {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .cards .card-grid .card {
+    margin: 2rem;
+  }
+
+  .cards .card-grid .card img {
+    margin: 0 auto;
+  }
+
+  .cards .card-grid .card h1 {
+    font-size: 1.5rem;
+  }
 }
