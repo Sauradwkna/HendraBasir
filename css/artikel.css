@@ -89,6 +89,7 @@ body {
 .artikel .sub-artikel {
   padding: 1.5rem;
   padding-bottom: 5rem;
+  padding-top: 0;
 }
 
 .artikel .sub-artikel img {
@@ -117,8 +118,18 @@ body {
   text-align: justify;
 }
 
+.artikel .list-artikel {
+  padding-top: 1rem;
+  background-color: whitesmoke;
+}
+
 .artikel .list-artikel .container {
   padding: 1.5rem;
+}
+
+.artikel .list-artikel h4 {
+  text-align: center;
+  color: var(--maroon);
 }
 
 .artikel .list-artikel .container .card {
@@ -188,5 +199,21 @@ body {
 
   .artikel {
     display: flex;
+  }
+}
+
+@media (max-width: 450px) {
+  .artikel {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .artikel .list-artikel {
+    padding-top: 1rem;
+    width: 90%;
+  }
+
+  .artikel .list-artikel .container .card {
+    margin: 0 auto;
   }
 }
