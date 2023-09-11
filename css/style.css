@@ -48,8 +48,7 @@ body {
 }
 
 .navbar .collapse .nav-link:hover {
-  scale: 1.1;
-  color: var(--red);
+  color: var(--black);
 }
 
 .navbar .collapse .nav-link.active {
@@ -129,6 +128,11 @@ body {
   border: 1px solid #dee2e6; /* Tambahkan garis tepi untuk membedakan kartu */
 }
 
+.card-slider .card img {
+  width: auto;
+  height: 10rem;
+}
+
 .card-slider .card .card-body .card-title {
   font-weight: bold;
   font-size: 1rem;
@@ -151,7 +155,7 @@ body {
 .cards .sub-cards {
   background: linear-gradient(to bottom, #6c0102, #013766);
   margin: 0 auto;
-  padding: 1rem 3rem 2rem 7%;
+  padding: 1rem 2rem 7%;
   box-shadow: 0 0 8px 2px rgba(0, 0, 0, 0.2);
 }
 
@@ -189,6 +193,7 @@ body {
 .cards .card img {
   width: 190px;
   height: 190px;
+  margin: 0 auto;
   text-align: center;
   object-fit: cover;
   border-radius: 50%;
@@ -240,16 +245,19 @@ body {
   flex: 1 1 50rem;
 }
 
-.footer .content .info a {
+.footer .content .info .sub-info {
+  display: flex;
+  justify-content: right;
+}
+
+.footer .content .info .sub-info a {
   font-size: 1rem;
   color: var(--white);
   padding: 0.6rem 0rem;
-  justify-content: right;
-  display: flex;
   text-decoration: none;
 }
 
-.footer .content .info a:hover {
+.footer .content .info .sub-info a:hover {
   color: var(--red);
 }
 
@@ -259,17 +267,21 @@ body {
     font-size: 75%;
   }
 
+  .profil p {
+    font-size: 16px;
+  }
+
+  .card-slider .card .card-body .card-title {
+    font-size: 18px;
+  }
+
   .cards .card-grid {
     display: flex;
     flex-wrap: wrap;
   }
 
   .cards .card-grid .card {
-    margin: 2rem;
-  }
-
-  .cards .card-grid .card img {
-    margin: 0 auto;
+    margin-bottom: 2rem;
   }
 
   .cards .card-grid .card h1 {
