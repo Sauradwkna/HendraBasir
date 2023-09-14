@@ -55,7 +55,9 @@ body {
   font-weight: 900;
 }
 
-.navbar .collapse form button {
+/* Jika login diperlukan */
+
+/* .navbar .collapse form button {
   color: var(--white);
   background-color: var(--maroon);
   padding: 3px 18px;
@@ -65,7 +67,7 @@ body {
   scale: 1.05;
   background-color: var(--white);
   color: var(--maroon);
-}
+} */
 
 /* Navigasi */
 .navigation {
@@ -193,6 +195,8 @@ body {
 }
 
 .cards .card img {
+  max-width: 100%;
+  max-height: 100%;
   width: 190px;
   height: 190px;
   margin: 0 auto;
