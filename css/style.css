@@ -154,7 +154,7 @@ body {
 
 .cards .sub-cards {
   background: linear-gradient(to bottom, #6c0102, #013766);
-  margin: 0 auto;
+  margin: 1rem auto;
   padding: 1rem 2rem 7%;
   box-shadow: 0 0 8px 2px rgba(0, 0, 0, 0.2);
 }
@@ -183,6 +183,8 @@ body {
   background-color: white;
   color: var(--navy);
   border-radius: 10px;
+  border-radius: 10px;
+  margin-bottom: 2rem;
 }
 
 .cards .card:hover {
@@ -219,6 +221,40 @@ body {
 
 .cards .more a:hover {
   color: var(--maroon);
+}
+
+/* Profil Atlet */
+.cards .sub-cards .search {
+  padding: 2rem;
+  text-align: center;
+}
+
+.cards .sub-cards .search input {
+  width: 80%;
+  padding: 1px 10px;
+  border: 1px solid var(--white);
+  border-radius: 3px;
+}
+
+.cards .sub-cards .search button {
+  padding: 2px 25px;
+  border: 1px solid var(--black);
+  border-radius: 3px;
+  color: var(--white);
+  background-color: var(--black);
+}
+
+.cards .sub-cards .search button i {
+  padding-right: 8px;
+}
+
+.cards .sub-cards .message {
+  margin: 75px 0;
+  font-size: 25px;
+  font-weight: bold;
+  font-family: "Francois One";
+  text-align: center;
+  color: var(--white);
 }
 
 /* Footer */
@@ -275,6 +311,18 @@ body {
     font-size: 18px;
   }
 
+  .cards .card {
+    margin-top: 2rem;
+  }
+
+  .cards .sub-cards {
+    margin: 4rem auto;
+  }
+
+  .cards .sub-cards .search input {
+    width: 70%;
+  }
+
   .cards .card-grid {
     display: flex;
     flex-wrap: wrap;
@@ -285,6 +333,29 @@ body {
   }
 
   .cards .card-grid .card h1 {
+    font-size: 1.5rem;
+  }
+}
+
+/* Mobile */
+@media (max-width: 450px) {
+  .cards .sub-cards .search input {
+    width: 75%;
+  }
+
+  .cards .sub-cards .search button {
+    padding: 2px 15px;
+  }
+
+  .cards .sub-cards .search button i {
+    padding: 0;
+  }
+
+  .cards .sub-cards .search button span {
+    display: none;
+  }
+
+  .cards .sub-cards .message {
     font-size: 1.5rem;
   }
 }

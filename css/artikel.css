@@ -48,8 +48,7 @@ body {
 }
 
 .navbar .collapse .nav-link:hover {
-  scale: 1.1;
-  color: var(--red);
+  color: var(--black);
 }
 
 .navbar .collapse .nav-link.active {
@@ -175,16 +174,19 @@ body {
   flex: 1 1 50rem;
 }
 
-.footer .content .info a {
+.footer .content .info .sub-info {
+  display: flex;
+  justify-content: right;
+}
+
+.footer .content .info .sub-info a {
   font-size: 1rem;
   color: var(--white);
   padding: 0.6rem 0rem;
-  justify-content: right;
-  display: flex;
   text-decoration: none;
 }
 
-.footer .content .info a:hover {
+.footer .content .info .sub-info a:hover {
   color: var(--red);
 }
 
